@@ -29,11 +29,37 @@ function lovetime() {
 }
 lovetime()
 
-// function audioAutoPlay(id){
-//     var audio = document.getElementById(id);
-//     audio.play();
-//     document.addEventListener("WeixinJSBridgeReady", function () {
-//             audio.play();
-//     }, false);
-// }
-// audioAutoPlay('music-jp');
+function audioAutoPlay(id){
+    var audio = document.getElementById(id);
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+    }, false);
+}
+audioAutoPlay('bgmusic');
+
+// document.addEventListener('DOMContentLoaded',function (){
+//     function audioAutoPlay(){
+//         var audio_ = document.getElementById('audio')
+//         document.addEventListener("WeixinJSBridgeReady", function () {
+//             audio_.play()
+//         }, false)
+//     }
+//     audioAutoPlay()
+// });
+
+// function autoPlayAudio() {
+//     wx.config({
+//          debug: false,
+//          appId: '',
+//          timestamp: 1,
+//          nonceStr: '',
+//          signature: '',
+//          jsApiList: []
+//      });
+//      wx.ready(function() {
+//          var globalAudio=document.getElementById("myaudio");
+//          globalAudio.play();
+//      });
+//  };
+//  autoPlayAudio();

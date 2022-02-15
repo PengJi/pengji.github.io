@@ -15,27 +15,9 @@
 </head>
 
 <body>
-    <!-- <audio id="music-jp" class="media-audio" src="./music.mp3" autoplay preload loop="loop"></audio > -->
-    <audio id="bgmusic" src="./music.mp3" autoplay preload loop></audio>
+    <!-- bg music -->
     <script src="http://res.wx.qq.com/open/js/jweixin-1.4.0.js" type="text/javascript"></script>
-    <script>
-        window.onload = function(){
-        function autoPlayAudio() {
-                wx.config({
-                    debug: false
-                    , appId: ''
-                    , timestamp: 1
-                    , nonceStr: ''
-                    , signature: ''
-                    , jsApiList: []
-                });
-                wx.ready(function () {
-                document.getElementById("bgmusic").play();
-                });
-            }
-        autoPlayAudio();
-    }
-    </script>
+    <audio id="bgmusic" class="media-audio" src="./music.mp3" autoplay preload loop></audio >
 
     <!-- 标题板块 -->
     <div class="title">
