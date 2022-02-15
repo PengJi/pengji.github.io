@@ -13,7 +13,7 @@ function lovetime() {
     var todayMinute = today.getMinutes()
     var todaySecond = today.getSeconds()
     // 修改这里时间即可
-    var t1 = Date.UTC(2021, 2, 28, 22, 23, 00)
+    var t1 = Date.UTC(2021, 09, 21, 11, 00, 00)
     var t2 = Date.UTC(todayYear, todayMonth, todayDate, todayHour, todayMinute, todaySecond)
     var diff = t2 - t1
     // var diffYears = Math.floor(diff / years)
@@ -29,11 +29,11 @@ function lovetime() {
 }
 lovetime()
 
-// function audioAutoPlay(id){
-//     var audio = document.getElementById(id);
-//     audio.play();
-//     document.addEventListener("WeixinJSBridgeReady", function () {
-//             audio.play();
-//     }, false);
-// }
-// audioAutoPlay('music-jp');
+function audioAutoPlay(id){
+    var audio = document.getElementById(id);
+    audio.play();
+    document.addEventListener("WeixinJSBridgeReady", function () {
+            audio.play();
+    }, false);
+}
+audioAutoPlay('music-jp');
